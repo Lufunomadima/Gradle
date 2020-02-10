@@ -3,11 +3,12 @@ public class Main {
     String name ="Ryan";
     int age = 20;
     String gender ="Male";
-    String[] interest = {"being a hardarse", "agile", "ssd hard drives"};
+    String[] interest = {"being a hardarse", "agile", "ssd hard drives."};
 
 
-        Person greeting = new Person(name, age, gender, interest);
-        greeting.hello();
+        Person person = new Person(name, age, gender, interest);
+       String greeting = person.hello();
+        System.out.println(greeting);
     }
 }
 
